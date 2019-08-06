@@ -219,7 +219,7 @@ iframe {
   text-decoration: none;
 }
 
-#main-footer a:hover {
+#main-footer .link:hover {
   color: lightgray;
 }
 
