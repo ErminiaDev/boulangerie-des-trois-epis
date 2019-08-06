@@ -8,11 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* .row {
-  margin-left: 0px;
-  margin-right: 0px;
-} */
-
 /* up arrow for back to top */
 #top i {
   border: solid white;
@@ -60,9 +55,14 @@ html {
   opacity: 0.9;
 }
 
+#navbar img {
+  width: 60px;
+  height: 60px;
+}
+
 #brand {
-  font-family: 'Lobster', cursive;
-  font-size: 2rem;
+  font-family: 'Satisfy', cursive;
+  font-size: 2.5rem;
 }
 
 #header {
@@ -91,10 +91,10 @@ html {
   width: 550px;
   height: 150px;
   margin-left: -15px;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #000;
   font-style: italic;
-  font-family: 'Lobster', cursive;
+  /* font-family: 'Lobster', cursive; */
 
   background-color: rgba(250, 250, 250, 0.7);
   clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
@@ -122,7 +122,7 @@ html {
 
 #presentation {
   background-color: #FFF;
-  font-family: 'Lobster', cursive;
+  /* font-family: 'Lobster', cursive; */
 }
 
 #presentation .img {
@@ -193,6 +193,11 @@ html {
 
 #map-section ul {
   list-style: none;
+}
+
+iframe {
+  width: 500px;
+  height: 350px;
 }
 
 #main-footer {
@@ -337,4 +342,26 @@ html {
 
 #bakers cite {
   font-size: 1.5em;
+}
+
+@media (max-width:1100px){
+  iframe {
+    width: 375px;
+    height: 260px;
+  }
+
+  #map-section h1{
+    font-size: 1.5em;
+  }
+
+  .horaires {
+    
+  }
+}
+
+@media (max-width:764px) {
+  iframe {
+    width: 250px;
+    height: 175px;
+  }
 }
