@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* .row {
+  margin-left: 0px;
+  margin-right: 0px;
+} */
+
 /* up arrow for back to top */
 #top i {
   border: solid white;
