@@ -1,0 +1,111 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+  background-color: #efeace;
+
+}
+
+/* #navspec {
+  background-color: #efeace !important;
+} */
+/*
+.bg-light {
+  background-color: #efeace;
+}
+
+.navbar-expand-lg {
+  background-color: #efeace;
+} */
+#navbar {
+  height: 130px;
+}
+
+.navbar {
+  text-transform:uppercase;
+}
+
+.navbar-brand {
+  font-family: 'Monoton', cursive;
+  font-size:2em;
+  text-transform:lowercase;
+}
+
+.navspec {
+  height:150px;
+}
+.nav-item {
+  text-align: right;
+}
+
+.parallax {
+  background-image: url("photo1.jpg");
+  height:500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxtxt {
+  padding-top:120px;
+  padding-left:50px;
+  font-family: 'Monoton', cursive;
+  font-size:3em;
+  color:white;
+  text-transform: uppercase;
+}
+
+.baguettes {
+  width:100%;
+}
+/*
+.blockquote {
+  font-size:2em;
+} */
+
+.headings {
+  font-size:2em;
+}
+
+.overlay {
+  opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333; /* for browsers that don't understand rgba() notation */
+    background-color: rgba(0,0,0,0.6);
+    color: #f90;
+    font-weight: bold;
+    line-height: 1.1em;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.container:hover .overlay {
+  opacity: 0.6;
+  -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.txtoverlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.block{
+  display:block;
+  position:relative;
+}
