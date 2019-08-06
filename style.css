@@ -77,16 +77,24 @@ html {
   backface-visibility: hidden;
 }
 
+.light-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 #header p {
-  position: relative;
-  width: 700px;
+  position: absolute;
+  width: 550px;
   height: 150px;
+  margin-left: -15px;
   font-size: 2.5em;
   color: #000;
   font-style: italic;
   font-family: 'Lobster', cursive;
-
-
 
   background-color: rgba(250, 250, 250, 0.7);
   clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
@@ -201,9 +209,17 @@ html {
   background-color: #FFF;
 }
 
-.link {
-  text-decoration: none;
+#main-footer a {
   color: white;
+  text-decoration: none;
+}
+
+#main-footer a:hover {
+  color: lightgray;
+}
+
+#sub-footer a:hover {
+  font-weight: bold;
 }
 
 /* PRODUCTS PAGE */
@@ -214,15 +230,6 @@ html {
   height:300px;
   background-size: cover;
   background-position: center;
-}
-
-.light-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
 }
 
 .custom-container{
