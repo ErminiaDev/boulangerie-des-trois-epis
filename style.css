@@ -1,15 +1,23 @@
+/*************CSS USED ON ALL PAGES**************/
+
 body {
-  margin-top: 105px;
   font-family: 'Montserrat', sans-serif;
   background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+#top{
+  top:0;
+  position:absolute;
+}
+
 /* up arrow for back to top */
-#top i {
+#arrow i {
   border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -50,6 +58,7 @@ html {
   }
 /* Scroll to top button end */
 
+/*navbar*/
 #navbar {
   background-color: #FFF;
   opacity: 0.9;
@@ -65,8 +74,58 @@ html {
   font-size: 2.5rem;
   text-shadow: 2px 2px 4px gray
 }
+/*end of navbar*/
 
+/*hero image overlay*/
+.light-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+/*end of hero image overlay*/
+
+/*footer*/
+#main-footer {
+  background-color: #000;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+#main-footer hr {
+  color: #fff;
+  border-color: #FFF;
+  background-color: #FFF;
+}
+
+#main-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#main-footer .link:hover {
+  color: lightgray;
+}
+
+#sub-footer a:hover {
+  color:white;
+  font-weight: bold;
+}
+
+#developer{
+  font-family: 'Sacramento', cursive;
+  font-size: 1.5em;
+}
+/*end of footer*/
+
+
+/*******************************INDEX PAGE****************************************/
 #header {
+  margin-top: 105px;
   position: relative;
   background-image: url("https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   height:500px;
@@ -78,15 +137,7 @@ html {
   backface-visibility: hidden;
 }
 
-.light-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-
+/*header animation*/
 #header p {
   position: absolute;
   width: 550px;
@@ -120,6 +171,8 @@ html {
 
   }
 }
+/*end of header animation*/
+
 
 #presentation {
   background-color: #FFF;
@@ -133,6 +186,7 @@ html {
   font-size: 1.5rem;
 }
 
+/*grid gallery*/
 #image-gallery {
   background-color: #000;
   display: grid;
@@ -194,6 +248,8 @@ html {
   height: 100%;
   width: 100%;
 }
+/*end of grid gallery*/
+
 
 #map-section ul {
   list-style: none;
@@ -204,37 +260,11 @@ iframe {
   height: 350px;
 }
 
-#main-footer {
-  background-color: #000;
-}
 
-.icon {
-  font-size: 2.5rem;
-}
-
-#main-footer hr {
-  color: #fff;
-  border-color: #FFF;
-  background-color: #FFF;
-}
-
-#main-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-#main-footer .link:hover {
-  color: lightgray;
-}
-
-#sub-footer a:hover {
-  color:white;
-  font-weight: bold;
-}
-
-/* PRODUCTS PAGE */
+/***************************** PRODUCTS PAGE **********************************/
 
 #header2 {
+  margin-top: 105px;
   position: relative;
   background-image: url("https://cdn.pixabay.com/photo/2016/11/29/08/24/bakery-1868396_960_720.jpg");
   height:300px;
@@ -252,10 +282,6 @@ iframe {
   max-width: 100%;
 }
 
-#developer{
-  font-family: 'Sacramento', cursive;
-  font-size: 1.5em;
-}
 .container-img {
   position: relative;
   width: 50%;
@@ -296,9 +322,10 @@ iframe {
   text-align: center;
 }
 
-/* ENGAGEMENTS PAGE */
+/********************************* ENGAGEMENTS PAGE *************************************/
 
 #header3 {
+  margin-top: 105px;
   position: relative;
   background-image: url("https://images.unsplash.com/photo-1469122312224-c5846569feb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1452&q=80");
   height:300px;
@@ -315,9 +342,10 @@ iframe {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* ABOUT PAGE */
+/************************************* ABOUT PAGE **************************************/
 
 #header4 {
+  margin-top: 105px;
   position: relative;
   background-image: url("https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   height:300px;
@@ -347,6 +375,13 @@ iframe {
 #bakers cite {
   font-size: 1.5em;
 }
+
+
+
+
+/*****************************MEDIA QUERIES*****************************/
+
+/*1100px*/
 
 @media (max-width:1100px){
   iframe {
@@ -432,6 +467,8 @@ iframe {
   }
 }
 
+/*764px*/
+
 @media (max-width:764px) {
   #brand{
     width:400px;
@@ -451,7 +488,6 @@ iframe {
     font-size: 1.5rem;
   }
   
-
   /*box grid*/
     #image-gallery {
       background-color: #000;
@@ -513,6 +549,8 @@ iframe {
       padding: 0px 20px 0px 20px;
     }
   }
+
+/*575px*/
 
 @media (max-width:575px){
   #brand{
